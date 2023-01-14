@@ -1,3 +1,3 @@
 # Data-Structure
 
-![Data Structures1](https://user-images.githubusercontent.com/119800014/212484438-277426bb-be94-4204-a2a4-f073c28a25e2.png)
+![Data Structures](https://user-images.githubusercontent.com/119800014/212485207-22cccbd9-db71-4f9d-a6a0-f95f875fc2c3.png)
