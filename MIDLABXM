@@ -1,0 +1,84 @@
+#include<stdio.h>
+int main(){
+int N1 ;
+ scanf("%d",&N1) ;
+int A1[N1];
+for(int i=0 ; i<N1; i++)
+{
+    scanf("%d",&A1[i]);
+
+}
+int N2 ;
+scanf("%d",&N2);
+int A2[N2];
+for(int i =0 ; i<N2; i++)
+{
+    scanf("%d",&A2[i]);
+}
+int temp =0;
+//sorting array1
+for(int i=0; i<N1; i++)
+{
+    {
+        for(int j=0; j<N1-1-i; j++)
+        {
+            if(A1[i]>A1[i+1])
+            {
+                temp = A1[i];
+                A1[i]=A1[i+1];
+                A1[i+1]=temp ;
+            }
+        }
+    }
+}
+
+
+//sorting array 2
+for(int i=0; i<N2; i++)
+{
+    {
+        for(int j=0; j<N2-1-i; j++)
+        {
+            if(A2[i]>A2[i+1])
+            {
+                temp = A2[i];
+                A2[i]=A2[i+1];
+                A2[i+1]=temp ;
+            }
+        }
+    }
+}
+//array1
+int mid1,low1=0,high1=N1-1,S1=0,t1=0;
+if(N1%2==0)
+{
+
+    mid1 =(low1 + high1)/2;
+}
+else
+{
+    S1=N1/2 ;
+    t1 =A1[S1]+A1[S1+1];
+    mid1=t1/2 ;
+}
+printf("%d\n",mid1);
+//for array 2
+int mid2,low2=0,high2=N2-1,s2=0,t2=0;
+if(N2%2==0)
+{
+
+    mid2 =(low2 + high2)/2;
+}
+else
+{
+    s2=N1/2 ;
+    t2 =A2[s2]+A2[s2+1];
+    mid2=t2/2 ;
+}
+printf("%d",mid2);
+int average  ;
+average = (mid1+mid2)/2;
+printf("%d\n",average);
+
+return 0 ;
+}
